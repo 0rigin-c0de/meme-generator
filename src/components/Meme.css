@@ -1,0 +1,91 @@
+.meme-form-container,
+.meme-form {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.meme-form-container {
+  padding: 0.25em;
+}
+
+input,
+.get-meme-button {
+  border-radius: 5px;
+  line-height: 1.5;
+  font-size: 0.75rem;
+}
+
+input {
+  border: 1px solid #d5d4d8;
+  padding: 0.625em;
+  color: #0d0d0d;
+}
+
+.get-meme-button {
+  font-family: inherit;
+  border: none;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: #fff;
+  padding: 0.625em;
+  cursor: pointer;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.meme-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .meme-form-container {
+    padding: 1em;
+  }
+  .meme-form {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  input {
+    flex: 0 0 48%;
+  }
+  input,
+  .get-meme-button {
+    font-size: 1rem;
+  }
+  .meme-image {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  input {
+    max-width: 400px;
+  }
+  .get-meme-button {
+    width: 400px;
+  }
+}
