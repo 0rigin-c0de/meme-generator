@@ -1,0 +1,31 @@
+.header-container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+}
+
+.troll-face-logo {
+  width: 40px;
+}
+
+h2 {
+  line-height: 1;
+  color: #ffffff;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .troll-face-logo {
+    max-width: 48px;
+  }
+
+  .header-container {
+    justify-content: center;
+  }
+}
